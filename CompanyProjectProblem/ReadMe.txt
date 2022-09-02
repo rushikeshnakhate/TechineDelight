@@ -15,11 +15,13 @@ that, given array V of N integers and two arrays A and B of M integers each, ret
 
 Examples:
 
-1. Given V = [-3, 5, 7, 2, 3], A = [3, 1] and B = [2, 4], the function should return 9. This can be achieved by completing project 3 (with value 2) first and then project 2 (with value 7).
+1. Given V = [-3, 5, 7, 2, 3], A = [3, 1] and B = [2, 4], the function should return 9.
+ This can be achieved by completing project 3 (with value 2) first and then project 2 (with value 7).
 
 2. Given V = [1, 1, 5], A = [0, 1] and B = [2, 2], the function should return 2.
 
-3. Given V = [5, 6, 6, 7, -10] and A = [0, 0, 0, 1, 2, 3] and B = [1, 2, 3, 3, 1, 2], the function should return 5. The project that are possible to be completed are 0 and 4. As project 4 would bring negative value to the company, it is optimal to do only project 0. The structure of dependencies of projects 1, 2 and 3 form a cycle, so none of them can be completed in a valid choice of projects.
+3. Given V = [5, 6, 6, 7, -10] and A = [0, 0, 0, 1, 2, 3] and B = [1, 2, 3, 3, 1, 2], the function should return 5.
+The project that are possible to be completed are 0 and 4. As project 4 would bring negative value to the company, it is optimal to do only project 0. The structure of dependencies of projects 1, 2 and 3 form a cycle, so none of them can be completed in a valid choice of projects.
 
 Write an efficient algorithm for the following assumptions:
 

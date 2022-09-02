@@ -1,1 +1,1 @@
-add_executable(CompanyProject Main.cpp)
+add_executable(CompanyProject CompanyProject.cpp)
