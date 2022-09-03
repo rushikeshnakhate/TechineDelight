@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/TechineDelight/MinimumIncrementMakeArrayUnique/MinimumIncrementMakeArrayUnique.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+map
+-
+set
+-
+
