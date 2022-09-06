@@ -1,3 +1,4 @@
+//https://www.youtube.com/watch?v=b7AYbpM5YrE Please watch video to understand bitwise operation 
 #include<bits/stdc++.h>
 
 using namespace std;
