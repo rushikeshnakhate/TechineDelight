@@ -15,6 +15,6 @@ bool findAllSubstr(std::string s, std::string out) {
 }
 
 int main() {
-    std::string str = "abc";
+    std::string str = "aaaa ";
     findAllSubstr(str, "");
 }
