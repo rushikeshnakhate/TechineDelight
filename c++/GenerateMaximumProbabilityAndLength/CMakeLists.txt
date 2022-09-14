@@ -1,1 +1,1 @@
-add_executable(GenerateMaximumProbabilityAndLength Test.cpp)
+add_executable(GenerateMaximumProbabilityAndLength GenerateMaximumProbabilityAndLength.cpp)
