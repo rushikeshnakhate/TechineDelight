@@ -10,23 +10,21 @@ T1 &operator<<(T1 &t1, T2 &t2) {
     return t1;
 }
 
-void AllWays(std::vector<std::vector<int>> &mat, int row, int col, std::vector<int> route, int obstacle) {
+void AllWays(std::vector<std::vector<int>> &mat, int row, int col, std::vector<int> route) {
     if (row >= mat.size() | col >= mat[0].size()) {
         return;
     }
-    if (mat[row][col] == 5) {
-        return ;
-        obstacle++;
-    }
+
     if (mat[row][col] == 9) {
         route.push_back(mat[row][col]);
-        std::cout << " obstacle ="<<obstacle<<" " << route ;
+        std::cout << route;
     }
+
     route.push_back(mat[row][col]);
 
-    AllWays(mat, row + 1, col, route,obstacle);
-    AllWays(mat, row, col + 1, route,obstacle);
-    AllWays(mat, row + 1, col + 1, route,obstacle);
+    AllWays(mat, row + 1, col, route);
+    AllWays(mat, row, col + 1, route);
+    AllWays(mat, row + 1, col + 1, route);
 
     return;
 }
@@ -40,6 +38,6 @@ int main() {
             };
 
     std::vector<int> route;
-    AllWays(mat, 0, 0, route,0);
+    AllWays(mat, 0, 0, route);
     return 0;
 }
