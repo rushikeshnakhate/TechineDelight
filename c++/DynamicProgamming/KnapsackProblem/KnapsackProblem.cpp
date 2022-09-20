@@ -25,7 +25,27 @@ public:
     }
 };
 
-class KnapSackUsingMemorization : public KnapSack {
+class KnapSackUsingMemorizationUsingMatrix : public KnapSack {
+    std::vector<std::vector<int>> lookUp ;
+public:
+    int GetMaxProfitFromKnapSack(int value[], int weight[], int W, int n) override {
+        if (W <= 0 || n < 0)
+            return 0;
+        std::string key = std::to_string(W) + "|" + std::to_string(n);
+        if (lookup.find(key) == lookup.end()) {
+            if (weight[n] <= W) {
+                int include = value[n] + this->GetMaxProfitFromKnapSack(value, weight, W - weight[n], n - 1);
+                int exclude = this->GetMaxProfitFromKnapSack(value, weight, W, n - 1);
+                lookup[key] = std::max(include, exclude);
+            } else {
+                lookup[key] = this->GetMaxProfitFromKnapSack(value, weight, W, n - 1);
+            }
+        }
+        return lookup[key];
+    }
+};
+
+class KnapSackUsingMemorizationUsingMap : public KnapSack {
     std::map<std::string, int> lookup;
 public:
     int GetMaxProfitFromKnapSack(int value[], int weight[], int W, int n) override {
@@ -85,8 +105,8 @@ int main() {
     int W = 10;
     int n = sizeof(value) / sizeof(value[0]);
 
-//    std::unique_ptr<KnapSack> pKnapSack = std::make_unique<KnapSackUsingMemorization>();
-    std::unique_ptr<KnapSack> pKnapSack = std::make_unique<KnapSackByTopDown>();
+    std::unique_ptr<KnapSack> pKnapSack = std::make_unique<KnapSackUsingMemorizationUsingMap>();
+//    std::unique_ptr<KnapSack> pKnapSack = std::make_unique<KnapSackByTopDown>();
     std::cout << pKnapSack->GetMaxProfitFromKnapSack(value, weight, W, n - 1) << std::endl;
 
     return 0;

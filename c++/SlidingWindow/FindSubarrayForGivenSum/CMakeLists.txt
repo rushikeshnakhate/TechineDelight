@@ -1,1 +1,1 @@
-add_executable(FindSubArrayForGivenSum FindSubArrayForGivenSum.cpp)
+add_executable(FindSubArrayForGivenSum1 Repeat.cpp)
