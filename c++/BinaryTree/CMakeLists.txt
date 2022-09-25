@@ -1,1 +1,1 @@
-add_executable(ChildrenSumProperty ChildrenSumProperty.cpp)
+add_executable(ChildrenSumProperty InOrder.cpp)
