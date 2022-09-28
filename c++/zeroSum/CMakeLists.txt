@@ -1,0 +1,1 @@
+add_executable(zero ZeroSum.cpp)
