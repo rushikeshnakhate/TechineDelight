@@ -43,7 +43,9 @@ find triplet or sub array with given condition </b> <br>
       *  https://www.techiedelight.com/find-minimum-sum-subarray-given-size-k/
       *  https://www.youtube.com/watch?v=KtpqeN0Goro&list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj&index=3
 
-
+ * Recurssion
+   * https://www.techiedelight.com/longest-common-subsequence/
+   * https://www.techiedelight.com/longest-common-subsequence-of-k-sequences/
 
 
 
