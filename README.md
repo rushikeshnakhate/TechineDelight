@@ -32,7 +32,7 @@ find triplet or sub array with given condition </b> <br>
 
 &nbsp;&nbsp;:small_orange_diamond: <b>Sliding window - find shorted /longest subset of Given array </b>
 
-&nbsp;&nbsp;:small_orange_diamond:  <b> Maximum Sum Subarray Problem (Kadane’s Algorithm) </b>
+&nbsp;&nbsp;:small_red_diamond:  <b> Maximum Sum Subarray Problem (Kadane’s Algorithm) </b>
 
 
 
