@@ -1,3 +1,5 @@
+https://github.com/fefong/markdown_readme
+
 
 ##### :black_small_square: Essential Links
 <p> 
@@ -32,8 +34,14 @@ find triplet or sub array with given condition </b> <br>
 
 &nbsp;&nbsp;:small_orange_diamond: <b>Sliding window - find shorted /longest subset of Given array </b>
 
-&nbsp;&nbsp;:small_red_diamond:  <b> Maximum Sum Subarray Problem (Kadane’s Algorithm) </b>
-
+ * Sliding window;
+    * Maximum Sum Subarray Problem (Kadane’s Algorithm) 
+      * https://www.techiedelight.com/maximum-subarray-problem-kadanes-algorithm/ 
+      * https://www.youtube.com/watch?v=EHCGAZBbB88&list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj
+    
+    * Maximum/Min Sum Suarray of size K
+      *  https://www.techiedelight.com/find-minimum-sum-subarray-given-size-k/
+      *  https://www.youtube.com/watch?v=KtpqeN0Goro&list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj&index=3
 
 
 
