@@ -1,5 +1,0 @@
-/mnt/d/TechineDelight/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/mnt/d/TechineDelight/cmake-build-debug/CMakeFiles/edit_cache.dir
-/mnt/d/TechineDelight/cmake-build-debug/AnagramString/CMakeFiles/rebuild_cache.dir
-/mnt/d/TechineDelight/cmake-build-debug/AnagramString/CMakeFiles/AnagramString.dir
-/mnt/d/TechineDelight/cmake-build-debug/AnagramString/CMakeFiles/edit_cache.dir
