@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/PrintAllSubstring.dir/PrintAllSubstring.cpp.o  -o PrintAllSubstring 
