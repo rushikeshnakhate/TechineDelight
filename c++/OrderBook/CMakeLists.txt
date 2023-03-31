@@ -1,1 +1,7 @@
-add_executable(FileReader FileReader.cpp)
+cmake_minimum_required(VERSION 3.15)
+project(OrderBook)
+add_subdirectory(libs)
+set(CMAKE_CXX_STANDARD 20)
+include_directories(libs/googletest/include)
+add_executable(OrderBook OrderBook.cpp)
+target_link_libraries(OrderBook PUBLIC gtest gtest_main)
