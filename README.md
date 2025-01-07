@@ -1,4 +1,11 @@
+
 https://github.com/fefong/markdown_readme
+
+
+https://youtube.com/playlist?list=PLQDzPczdXrTilRgmNUQ632OrD-wfRLUR_
+
+
+
 
 
 ##### :black_small_square: Essential Links
