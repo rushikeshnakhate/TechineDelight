@@ -25,12 +25,12 @@ std::ostream &operator<<(std::ostream &os, std::unique_ptr<Employee> &e) {
     return os;
 }
 
-int main() {
-    Employee a = 10;
-    int id11 = a;
-    std::cout << id11;
-    std::unique_ptr<Employee> employee = std::make_unique<Employee>(10);
-    std::cout << employee;
-    std::unique_ptr<Employee> e1{new Employee(11)};
-    std::cout << e1;
-}
+//int main() {
+//    Employee a = 10;
+//    int id11 = a;
+//    std::cout << id11;
+//    std::unique_ptr<Employee> employee = std::make_unique<Employee>(10);
+//    std::cout << employee;
+//    std::unique_ptr<Employee> e1{new Employee(11)};
+//    std::cout << e1;
+//}

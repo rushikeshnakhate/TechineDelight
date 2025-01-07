@@ -1,7 +1,4 @@
 
-//
-// Created by USER on 1/6/2025.
-//
 namespace custom {
     template<typename T>
     class UniqPtr {
@@ -23,8 +20,9 @@ namespace custom {
 
         UniqPtr &operator=(UniqPtr &&uniqPtr) noexcept {
             if (this != uniqPtr) {
-                delete uniqPtr;
+                delete this->ptr;
                 this->ptr = uniqPtr.ptr;
+                delete uniqPtr.ptr;
                 uniqPtr.ptr = nullptr;
             }
         }
@@ -33,5 +31,17 @@ namespace custom {
             return ptr;
         }
 
+        //the release() function relinquishes ownership of the managed object. It returns the raw pointer to the caller and sets the std::unique_ptr internal pointer to nullptr.
+        T release() {
+            T *temp = ptr;
+            ptr = nullptr;
+            return temp;
+        }
+
+        //Deletes the currently managed object (if any) and takes ownership of a new object provided as input.
+        void reset(T *newPtr = nullptr) {
+            delete this->ptr;
+            this->ptr = newPtr;
+        }
     };
 }
